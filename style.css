@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #2e3d2f; color: white; }
+}
+
+header {
+    background-color:#9ba58d;
+    padding:0.7rem 1.5rem;
+    position: fixed;
+    width:100% ;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+font-family:"momntserrat",cursive;
+ font-size:50px; font-weight: bold; color: #fff; }
+
+.nav-links {
+font-size:10px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight:700;
+    transition: color 0.3s ease;
+    margin-bottom:2rem;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50;
+}
+
+.hero {
+    height: 100vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color:#cc8fa3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 2rem;
+    text-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content h1 {
+font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    border-radius:30px;
+cursor: pointer;
+      transition: text-shadow 0.3s ease;
+animation: gradient 15s ease infinite;
+text-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+    color:#fff;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-:;size: 1.3rem;
+    color:#fff;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.cta-btn {
+    padding: 1rem 3rem;
+    background-color: #ece7e2;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+section {
+   padding: 40px; background: #f7f3e9; color: black; margin: 20px; border-radius: 10px
+}
+
+h2 {
+    color:#e65001;
+    text-shadow: 0 0px 00px rgba(0, 0, 0, 0.0);
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about .skills {
+    margin-top: 3rem;
+}
+
+.skill-bar {
+    margin-bottom: 2rem;
+}
+
+.skill-bar label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+}
+
+.portfolio-items {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 30%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.portfolio-item h3 {
+     color:#7e57c2;
+    font-size: 1.8rem;
+    margin-top: 1.2rem;
+    font-weight: 600;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.contact form button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+footer .social-links {
+    margin-bottom: 2rem;
+}
+
+footer .social-links a { display: inline-block; background:#333333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 20px; margin-top: 10px; font-weight: bold; }
+
+footer .social-links a:hover {
+    color: #4CAF50;
+}
